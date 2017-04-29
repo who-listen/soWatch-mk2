@@ -1,0 +1,7 @@
+*.xpi
+*.png
+*.jpg
+*.bat
+.jpmignore
+bootstrap.js
+install.rdf
