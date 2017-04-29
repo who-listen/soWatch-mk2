@@ -1,6 +1,4 @@
 *.xpi
-*.png
-*.jpg
 *.bat
 .jpmignore
 bootstrap.js
