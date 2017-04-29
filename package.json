@@ -1,0 +1,198 @@
+{
+  "id": "sowatchmk2@jc3213.github",
+  "title": "soWatch! mk2",
+  "name": "sowatchmk2",
+  "version": "1.16.6",
+  "description": "soWatch! plus additional features, built with Add-on SDK. Use at your own risk!",
+  "main": "index.js",
+  "author": "jc3213",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "locales": {
+    "ja": {
+      "description": "soWatch!の増強版、Add-on SDKを用いて開発、自己責任で使用してください！"
+    },
+    "zh-CN": {
+      "description": "soWatch!的功能加强版，基于Add-on SDK开发，用户需自行承担使用风险！"
+    }
+  },
+  "permissions": {
+    "private-browsing": true,
+    "multiprocess": true
+  },
+  "homepage": "https://github.com/jc3213/soWatch-mk2/",
+  "updateURL": "https://raw.githubusercontent.com/jc3213/Misc/master/Update/soWatch_mk2.rdf",
+  "updateLink": "https://github.com/jc3213/soWatch-mk2/releases/download/1.16.6/sowatch_mk2-1.16.6-fx.xpi",
+  "license": "LGPL-3.0",
+  "preferences": [
+    {
+      "name": "restore",
+      "type": "control",
+      "title": " ",
+      "label": "Restore Default"
+    },
+    {
+      "name": "button",
+      "type": "bool",
+      "title": "Toolbar Button",
+      "value": true
+    },
+    {
+      "name": "update",
+      "type": "integer",
+      "title": "Update Date",
+      "value": 0,
+      "hidden": true
+    },
+    {
+      "name": "interval",
+      "type": "integer",
+      "title": "Update Interval",
+      "value": 8
+    },
+    {
+      "name": "download",
+      "type": "control",
+      "title": " ",
+      "label": "Update Player"
+    },
+    {
+      "name": "offline",
+      "type": "bool",
+      "title": "Offline Mode",
+      "value": true
+    },
+    {
+      "name": "folder",
+      "type": "directory",
+      "title": "Defined Folder"
+    },
+    {
+      "name": "server",
+      "type": "string",
+      "title": "Defined Server",
+      "value": ""
+    },
+    {
+      "name": "youku",
+      "type": "menulist",
+      "title": "Option: Youku",
+      "value": 0,
+      "options": [
+        {
+          "value": 1,
+          "label": "Player"
+        },
+        {
+          "value": 2,
+          "label": "Filter"
+        },
+        {
+          "value": 0,
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "name": "tudou",
+      "type": "menulist",
+      "title": "Option: Tudou",
+      "value": 0,
+      "options": [
+        {
+          "value": 1,
+          "label": "Player"
+        },
+        {
+          "value": 2,
+          "label": "Filter"
+        },
+        {
+          "value": 0,
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "name": "iqiyi",
+      "type": "menulist",
+      "title": "Option: iQiyi",
+      "value": 0,
+      "options": [
+        {
+          "value": 1,
+          "label": "Player"
+        },
+        {
+          "value": 2,
+          "label": "Filter"
+        },
+        {
+          "value": 0,
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "name": "letv",
+      "type": "menulist",
+      "title": "Option: Letv",
+      "value": 0,
+      "options": [
+        {
+          "value": 1,
+          "label": "Player"
+        },
+        {
+          "value": 2,
+          "label": "Filter"
+        },
+        {
+          "value": 0,
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "name": "sohu",
+      "type": "menulist",
+      "title": "Option: Sohu",
+      "value": 0,
+      "options": [
+        {
+          "value": 1,
+          "label": "Player"
+        },
+        {
+          "value": 2,
+          "label": "Filter"
+        },
+        {
+          "value": 0,
+          "label": "None"
+        }
+      ]
+    },
+    {
+      "name": "pptv",
+      "type": "menulist",
+      "title": "Option: PPTV",
+      "value": 0,
+      "options": [
+        {
+          "value": 1,
+          "label": "Player"
+        },
+        {
+          "value": 2,
+          "label": "Filter"
+        },
+        {
+          "value": 0,
+          "label": "None"
+        }
+      ]
+    }
+  ]
+}
