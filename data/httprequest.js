@@ -39,8 +39,8 @@ function getFilter(httpChannel) {
     if (!rule.enabled) continue;
 
     if (rule.pattern.test(httpChannel.URI.spec)) {
+      request[rule.website] ++;
       if (rule.website == "iqiyi") {
-        request[rule.website] ++;
         if (request[rule.website] != 2) {
           setFilter(rule, httpChannel);
         }
