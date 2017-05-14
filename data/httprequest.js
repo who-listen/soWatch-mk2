@@ -58,14 +58,10 @@ function getPlayer(subject, httpChannel) {
   for (var i in Storage.player) {
     var rule = Storage.player[i], site = Storage.website[rule.website];
 
-    if (httpChannel.URI.host.indexOf(site.host) > -1) {
+    if (/\.swf$/i.test(httpChannel.URI.spec)) {
       if (rule.website == "iqiyi") {
         request[rule.website] = 0;
       }
-      site.visit = true;
-    }
-    else {
-      site.visit = false;
     }
 
     if (!rule.enabled) continue;
