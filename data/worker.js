@@ -16,7 +16,7 @@ exports.restore = function () {
   }
 };
 exports.download = function (state) {
-  Preferences.setValue(Storage.option.config["update"].prefs, parseInt(Date.now() / 1000) + Storage.option.config["period"].value * 86400);
+  Preferences.setValue(Storage.option.config["update"].prefs, parseInt(Date.now() / 1000) + Storage.option.config["interval"].value * 86400);
 
   Storage.file.queue.forEach(function (element, index, array) {
     var link = element[0], file = element[1];
